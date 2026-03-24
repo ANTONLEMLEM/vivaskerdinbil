@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>Book Tid</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f2f2;
+}
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+margin:0 20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff9800;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:40px;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,select{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff9800;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Forside</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="booking.html">Book tid</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<h1>Book Tid Til Bilrens</h1>
+
+<form>
+
+<input type="text" placeholder="Navn" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="tel" placeholder="Telefon">
+
+<select>
+
+<option>Vælg service</option>
+
+<option>Basic Bilvask</option>
+
+<option>Indvendig Rens</option>
+
+<option>Premium Bilrens</option>
+
+<option>Polering</option>
+
+</select>
+
+<input type="date">
+
+<button type="submit">Book tid</button>
+
+</form>
+
+</div>
+
+<footer>
+
+© 2026 Pro Bilrens
+
+</footer>
+
+</body>
+</html>

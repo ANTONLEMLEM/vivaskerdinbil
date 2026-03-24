@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Tid</title>
+<link rel="icon" type="image/png" href="logo2.png">
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+}
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+margin:0 20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff9800;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:50px 20px;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,select{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff9800;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#e68900;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Forside</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="booking.html">Book tid</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>Book Tid Til Bilrens</h1>
+
+<form action="https://formspree.io/f/mbdznbba" method="POST">
+
+<input type="text" name="Navn" placeholder="Navn" required>
+
+<input type="email" name="Email" placeholder="Email" required>
+
+<input type="tel" name="Telefon" placeholder="Telefon">
+
+<input type="text" name="Adresse" placeholder="Adresse" required>
+
+<select name="Service" required>
+
+<option value="">Vælg service</option>
+
+<option>Basic Bilvask</option>
+<option>Indvendig Rens</option>
+<option>Premium Bilrens</option>
+
+
+</select>
+
+<input type="date" name="Dato" required>
+
+<select name="Tidspunkt" required>
+
+<option value="">Vælg tidspunkt</option>
+
+<option>08:00</option>
+<option>09:00</option>
+<option>10:00</option>
+<option>11:00</option>
+<option>12:00</option>
+<option>13:00</option>
+<option>14:00</option>
+<option>15:00</option>
+<option>16:00</option>
+<option>17:00</option>
+<option>18:00</option>
+</select>
+
+<input type="text" name="spørgsmål" placeholder="spørgsmål" >
+
+<input type="hidden" name="_subject" value="Ny booking til Pro Bilrens">
+
+<input type="hidden" name="_next" value="tak.html">
+
+<button type="submit">Book tid</button>
+
+</form>
+
+</div>
+
+<!-- Footer Start -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2026 Din Hjemmeside. Alle rettigheder forbeholdes.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">hjem</a><li>
+      <li><a href="om.html">Om os</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="booking.html">book tid</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+/* Footer Styling */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.site-footer .footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-footer .footer-links li a:hover {
+  color: #1e90ff; /* lys blå ved hover */
+}
+</style>
+<!-- Footer End -->
+
+</body>
+
+</html>

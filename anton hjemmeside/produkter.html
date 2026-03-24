@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0 lives-shop/produkter</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box;}
+        body {font-family:Arial,sans-serif; background:#f9f9f9; color:#333; line-height:1.6;}
+        nav {background:#3498db; padding:10px 0;}
+        nav ul {list-style:none; display:flex; justify-content:center;}
+        nav ul li {margin:0 15px;}
+        nav ul li a {text-decoration:none; color:white; font-weight:bold;}
+        nav ul li a:hover {color:#ffd700;}
+        .container {max-width:1000px; margin:20px auto; padding:0 20px; text-align:center;}
+        h1,h2 {margin-bottom:20px;}
+        .products {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
+        .product {background:white; padding:15px; border-radius:10px; width:200px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+        .product img {max-width:100%; border-radius:5px;}
+        .product button {background:#3498db; color:white; border:none; padding:10px; cursor:pointer; border-radius:5px; margin-top:10px;}
+        .product button:hover {background:#2980b9;}
+        a.button {text-decoration:none; color:#fff; background:#e67e22; padding:10px 20px; border-radius:5px;}
+        a.button:hover {background:#d35400;}
+        footer {background:#2c3e50; color:white; text-align:center; padding:15px; margin-top:30px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li><a href="om.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="kurv.html">Kurv</a></li>
+        </ul>
+    </nav>
+
+    <div class="products">
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Mus" alt="Trådløs Mus">
+        <h2>Trådløs Mus</h2>
+        <p>Pris: 149 kr.</p>
+        <button data-name="Trådløs Mus" data-price="149">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Tastatur" alt="Gaming Tastatur">
+        <h2>Gaming Tastatur</h2>
+        <p>Pris: 499 kr.</p>
+        <button data-name="Gaming Tastatur" data-price="499">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Sk%C3%A6rm" alt="Skærm 24&quot;">
+        <h2>Skærm 24"</h2>
+        <p>Pris: 1199 kr.</p>
+        <button data-name="Skærm 24&quot;" data-price="1199">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Rygs%C3%A6k" alt="Laptop Rygsæk">
+        <h2>Laptop Rygsæk</h2>
+        <p>Pris: 399 kr.</p>
+        <button data-name="Laptop Rygsæk" data-price="399">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Hovedtelefon" alt="Bluetooth Hovedtelefon">
+        <h2>Bluetooth Hovedtelefon</h2>
+        <p>Pris: 599 kr.</p>
+        <button data-name="Bluetooth Hovedtelefon" data-price="599">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Smartwatch" alt="Smartwatch">
+        <h2>Smartwatch</h2>
+        <p>Pris: 899 kr.</p>
+        <button data-name="Smartwatch" data-price="899">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Powerbank" alt="Powerbank 10000mAh">
+        <h2>Powerbank 10000mAh</h2>
+        <p>Pris: 249 kr.</p>
+        <button data-name="Powerbank 10000mAh" data-price="249">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=USB-C+Hub" alt="USB-C Hub">
+        <h2>USB-C Hub</h2>
+        <p>Pris: 199 kr.</p>
+        <button data-name="USB-C Hub" data-price="199">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Oplader" alt="Trådløs Oplader">
+        <h2>Trådløs Oplader</h2>
+        <p>Pris: 299 kr.</p>
+        <button data-name="Trådløs Oplader" data-price="299">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Webkamera" alt="Webkamera HD">
+        <h2>Webkamera HD</h2>
+        <p>Pris: 349 kr.</p>
+        <button data-name="Webkamera HD" data-price="349">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Mikrofon" alt="Mikrofon">
+        <h2>Mikrofon</h2>
+        <p>Pris: 499 kr.</p>
+        <button data-name="Mikrofon" data-price="499">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Gaming+Stol" alt="Gaming Stol">
+        <h2>Gaming Stol</h2>
+        <p>Pris: 1299 kr.</p>
+        <button data-name="Gaming Stol" data-price="1299">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Bordlampe" alt="LED Bordlampe">
+        <h2>LED Bordlampe</h2>
+        <p>Pris: 229 kr.</p>
+        <button data-name="LED Bordlampe" data-price="229">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Harddisk" alt="Ekstern Harddisk 1TB">
+        <h2>Ekstern Harddisk 1TB</h2>
+        <p>Pris: 699 kr.</p>
+        <button data-name="Ekstern Harddisk 1TB" data-price="699">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Tablet" alt="Tablet 10&quot;">
+        <h2>Tablet 10"</h2>
+        <p>Pris: 1299 kr.</p>
+        <button data-name="Tablet 10&quot;" data-price="1299">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Tripod" alt="Kamera Tripod">
+        <h2>Kamera Tripod</h2>
+        <p>Pris: 349 kr.</p>
+        <button data-name="Kamera Tripod" data-price="349">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=VR+Briller" alt="VR Briller">
+        <h2>VR Briller</h2>
+        <p>Pris: 1499 kr.</p>
+        <button data-name="VR Briller" data-price="1499">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Smart+Plug" alt="Smart Home Plug">
+        <h2>Smart Home Plug</h2>
+        <p>Pris: 179 kr.</p>
+        <button data-name="Smart Home Plug" data-price="179">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Fitness+Tracker" alt="Fitness Tracker">
+        <h2>Fitness Tracker</h2>
+        <p>Pris: 499 kr.</p>
+        <button data-name="Fitness Tracker" data-price="499">Tilføj til kurv</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/200?text=Speaker" alt="Bluetooth Speaker">
+        <h2>Bluetooth Speaker</h2>
+        <p>Pris: 349 kr.</p>
+        <button data-name="Bluetooth Speaker" data-price="349">Tilføj til kurv</button>
+    </div>
+</div>
+
+    <footer>
+        &copy; 2026 Min Online Butik
+    </footer>
+
+    <script>
+        // Tilføj produkter til localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        document.querySelectorAll('.product button').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.dataset.name;
+                const price = parseInt(button.dataset.price);
+                cart.push({name, price});
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${name} er tilføjet til kurven!`);
+            });
+        });
+    </script>
+</body>
+</html>

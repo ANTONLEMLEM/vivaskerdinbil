@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tak for din ordre</title>
+<style>
+body{font-family:Arial,sans-serif;text-align:center;margin:0;padding:0;background:#f9f9f9;}
+.container{max-width:600px;margin:50px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+h1{margin-bottom:20px;color:#27ae60;}
+ul{list-style:none;padding-left:0;margin-bottom:15px;}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Tak for din ordre!</h1>
+    <p id="greeting"></p>
+    <h2>Din bestilling:</h2>
+    <ul class="order-items"></ul>
+    <div class="order-total"></div>
+    <p><a href="index.html">Tilbage til Forsiden</a></p>
+</div>
+
+<script>
+const order = JSON.parse(localStorage.getItem('lastOrder')) || [];
+const name = localStorage.getItem('lastOrderName') || '';
+const orderItems = document.querySelector('.order-items');
+const orderTotal = document.querySelector('.order-total');
+document.getElementById('greeting').textContent = `Hej ${name}, vi har modtaget din ordre!`;
+
+let total = 0;
+if(order.length === 0){
+    orderItems.innerHTML = '<li>Ingen varer i ordren.</li>';
+} else {
+    order.forEach(item=>{
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - ${item.price} kr.`;
+        orderItems.appendChild(li);
+        total += item.price;
+    });
+}
+orderTotal.textContent = `Total: ${total} kr.`;
+
+// Ryd midlertidig ordre-data
+localStorage.removeItem('lastOrder');
+localStorage.removeItem('lastOrderName');
+</script>
+</body>
+</html>
